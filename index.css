@@ -1,0 +1,51 @@
+@font-face {
+    font-family: Playfair;
+    src: url(Fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf);
+    src: url(Fonts/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: QuickSand;
+    src: url(Fonts/Quicksand-VariableFont_wght.ttf);
+}
+
+*{
+ margin: 0;
+ padding: 0;   
+}
+
+body{
+    background-color: #f9f9f9;
+    color: #1e2a30;
+}
+
+/* Header */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #f8f9fa;
+}
+
+.logo{
+    margin-left: 5px;
+}
+
+nav ul{
+    display: flex;
+    margin-right: 5px;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 12px 0 0 10px;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: #1e2a30;
+}
+
+.nav-link:focus{
+    color: #3a5a40;
+}
