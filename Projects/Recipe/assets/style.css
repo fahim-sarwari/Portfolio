@@ -1,0 +1,150 @@
+@font-face {
+    font-family: 'Young Serif';
+    src: url(../fonts/YoungSerif-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url(../fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+body{
+    margin: 0;
+    font-family: 'Young Serif', serif;
+}
+
+ol, ul{
+    list-style-position: outside;
+}
+li{
+    padding-left: 10px;
+}
+
+.container{
+    width: 80%;
+    margin: 40px auto;
+}
+
+h1{
+    font-size: 35px;
+}
+
+.intro{
+    font-family: 'Outfit';
+    font-size: 16px;
+}
+
+.box-1{
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 15px;
+    padding: 5px 20px;
+}
+
+ul li:not(:first-child){
+    padding-top: 15px;
+}
+
+.box-1 h3, ul li{
+    font-family: 'Outfit';
+}
+
+.box-1 h3{
+    color: hsl(332, 51%, 32%);
+}
+
+.ingredients{
+    margin: 30px 0;
+}
+
+.ingredients h2{
+    font-size: 25px;
+    color: hsl(14, 45%, 36%);
+}
+
+.ingredients ul li{
+    font-size: 16px;
+    font-family: 'Outfit';
+}
+
+.ingredients ul li:not(:first-child){
+    padding-top: 15px;
+}
+
+.instructions{
+    margin: 30px 0;
+}
+
+.instructions h2{
+    font-size: 25px;
+    color: hsl(14, 45%, 36%);
+}
+
+.instructions ol li{
+    font-size: 16px;
+    font-family: 'Outfit';
+}
+
+.instructions ol li:not(:first-child){
+    padding-top: 15px;
+}
+
+.nutrition{
+    margin: 30px 0;
+}
+
+.nutrition h2{
+    font-size: 25px;
+    color: hsl(14, 45%, 36%);
+}
+
+.nutrition p{
+    font-size: 16px;
+    font-family: 'Outfit';
+}
+
+table{
+    width: 100%;
+    padding: 10px;
+    border-collapse: collapse;
+}
+
+table tr td b{
+    color: hsl(14, 45%, 36%);
+}
+
+table tr:not(:last-child) td{
+    border-bottom: 1px solid black;
+}
+
+
+@media (min-width: 768px) {
+    body{
+        background-color: hsl(30, 54%, 90%);
+    }
+
+    main {
+        background-color: #fff; 
+        width: 50%;
+        margin: 70px auto;
+        padding: 25px;
+        border-radius: 25px;
+    }
+
+    .photo img{
+        border-radius: 25px
+    };
+}
+
+@media (min-width: 1024px) {
+    main {
+        width: 50%; 
+    }
+}
+
+@media (min-width: 1440px) {
+    main {
+        width: 50%; 
+    }
+}
