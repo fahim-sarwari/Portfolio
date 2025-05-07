@@ -18,6 +18,10 @@
     padding: 0;  
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: #f9f9f9;
     color: #1e2a30;
@@ -116,7 +120,7 @@ nav ul li{
 
 /* About */
 
-#about{
+#about-title{
     width: 130px;
     margin: 30px auto 0px;
     text-align: center;
@@ -137,7 +141,7 @@ nav ul li{
 .about-text{
     width: 85%;
     margin: 5px auto;
-    background-color: #caf0f8;
+    background-color: #edf2f4;
     border-radius: 10px;
 }
 
@@ -162,4 +166,108 @@ dd{
     width: 300px;
     height: 320px;
     border-radius: 10px;
+}
+
+/* Projects */
+
+#projects-title{
+    width: 130px;
+    margin: 30px auto 0px;
+    text-align: center;
+    border-bottom: 2px solid #1e90ff;
+}
+
+.projects{
+    width: 90%;
+    margin: 25px auto 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 0 3px #1e90ff;
+    border-radius: 10px;
+}
+
+.projects div{
+    background-color: #edf2f4;
+    margin: 10px auto;
+    width: 90%;
+    height: 200px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.projects .first-project{
+    margin-top: 30px;
+}
+
+.first-project img{
+    width: 90%;
+    height: 130px;
+    margin: 30px auto 0;
+    border-radius: 10px;
+}
+
+.prj-link{
+    color: #1e2a30;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.prj-link:hover{
+    color: #1e90ff;
+}
+
+.prj-link:active{
+    color: #1e90ff;
+}
+
+/* Contact */
+
+#contact-title{
+    width: 130px;
+    margin: 30px auto 0px;
+    text-align: center;
+    border-bottom: 2px solid #1e90ff;
+}
+
+.contact-section{
+    width: 90%;
+    margin: 25px auto 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 0 3px #1e90ff;
+    border-radius: 10px;
+}
+
+.contact-logo{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.contact-logo img{
+    width: 90%;
+    border-radius: 10px;
+}
+
+.social-contact{
+    width: 90%;
+    margin: 10px auto;
+    padding-bottom: 15px;
+    background-color: #edf2f4;
+    border-radius: 10px;
+}
+
+.contacts a{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0 0 20px;
+    text-decoration: none;
+    color: #1e2a30;
+}
+
+#number{
+    font-family: Arial, Helvetica, sans-serif;
 }
