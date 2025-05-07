@@ -232,7 +232,7 @@ dd{
 
 .contact-section{
     width: 90%;
-    margin: 25px auto 0;
+    margin: 25px auto 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
