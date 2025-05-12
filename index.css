@@ -159,27 +159,29 @@ nav ul li{
 .projects{
     width: 90%;
     margin: 25px auto 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     box-shadow: 0 0 3px #1e90ff;
     border-radius: 10px;
 }
 
-.projects div{
+.container{
+    width: 90%;
+    margin: auto;
+    padding: 12px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container div{
     background-color: #edf2f4;
     margin: 10px auto;
-    width: 90%;
+    width: 95%;
     height: 200px;
     border-radius: 10px;
     text-align: center;
 }
 
-.projects .first-project{
-    margin-top: 30px;
-}
-
-.first-project img{
+.prjts-content img{
     width: 90%;
     height: 130px;
     margin: 30px auto 0;
@@ -212,29 +214,44 @@ nav ul li{
 .contact-section{
     width: 90%;
     margin: 25px auto 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     box-shadow: 0 0 3px #1e90ff;
     border-radius: 10px;
 }
 
+.contact-grnl{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 0;
+}
+
 .contact-logo{
     text-align: center;
-    padding-top: 20px;
 }
 
 .contact-logo img{
-    width: 90%;
+    width: 86%;
+    height: 300px;
     border-radius: 10px;
 }
 
 .social-contact{
-    width: 90%;
+    width: 86%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     margin: 10px auto;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
     background-color: #edf2f4;
     border-radius: 10px;
+}
+
+.social-contact .contacts{
+    width: 280px;
+    margin: 0 auto;
+    line-height: 3;
+    border-bottom: 2px solid #1e90ff;
 }
 
 .contacts a{
@@ -256,4 +273,66 @@ nav ul li{
 footer{
     text-align: center;
     padding: 10px;
+}
+
+/* Responsive style for Tablets (758px) */
+
+@media (min-width: 768px) {
+    /* Home */
+    #home{
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 50px;
+        box-sizing: border-box;
+    }
+
+    .home-text, .profile-img{
+        margin-bottom: 40px;
+    }
+
+    .home-text{
+        padding-top: 30px;
+    }
+
+    /* Projects */
+    .container{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .container div{
+        width: 30%;
+        height: 160px;
+        margin: 12px 8px;
+    }
+
+    .prjts-content{
+        padding: 0 0 10px;
+    }
+
+    .prjts-content img{
+        height: 100px;
+    }
+
+    /* Contact */
+    .contact-grnl{
+        width: 86%;
+        margin: 0 auto;
+        flex-direction: row;
+        align-items: center;
+        box-sizing: border-box;
+    }
+    
+    .contact-logo, .social-contact{
+        width: 50%;
+        height: 300px;
+    }
+
+    .social-contact{
+        height: 290px;
+    }
+
+    .contact-logo img{
+        width: 100%;
+    }
 }
