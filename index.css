@@ -140,32 +140,11 @@ nav ul li{
 
 .about-text{
     width: 85%;
-    margin: 5px auto;
+    margin: auto;
+    padding: 20px;
     background-color: #edf2f4;
     border-radius: 10px;
-}
-
-dl{
-    padding: 10px;
-}
-
-dt{
-    font-weight: bold;
-}
-
-dd{
-    border-bottom: 2px solid #1e90ff;
-    margin-bottom: 10px;
-}
-
-.about-image{
-    text-align: center;
-}
-
-.about-image img{
-    width: 300px;
-    height: 320px;
-    border-radius: 10px;
+    box-sizing: border-box;
 }
 
 /* Projects */
@@ -224,7 +203,7 @@ dd{
 /* Contact */
 
 #contact-title{
-    width: 130px;
+    width: 150px;
     margin: 30px auto 0px;
     text-align: center;
     border-bottom: 2px solid #1e90ff;
