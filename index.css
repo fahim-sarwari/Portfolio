@@ -278,7 +278,6 @@ footer{
 /* Responsive style for Tablets (758px) */
 
 @media (min-width: 768px) {
-    /* Home */
     #home{
         flex-direction: row;
         justify-content: space-between;
@@ -294,7 +293,6 @@ footer{
         padding-top: 30px;
     }
 
-    /* Projects */
     .container{
         flex-direction: row;
         justify-content: center;
@@ -314,7 +312,6 @@ footer{
         height: 100px;
     }
 
-    /* Contact */
     .contact-grnl{
         width: 86%;
         margin: 0 auto;
@@ -334,5 +331,66 @@ footer{
 
     .contact-logo img{
         width: 100%;
+    }
+}
+
+/* Responsive style for 1024px and wider */
+
+@media (min-width: 1024px) {
+    body{
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    header{
+        max-width: 100%;
+    }
+    
+    .logo{
+        font-size: 35px;
+    }
+
+    nav{
+        font-size: large;
+    }
+
+    nav ul li a:hover{
+        border-bottom: 2px solid #1e90ff;
+    }
+
+    #home{
+        padding: 0 80px;
+    }
+
+    .about{
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .about-text{
+        width: 85%;
+        font-size: 18px;
+    }
+
+    .profile-img img{
+        width: 300px;
+        height: 300px;
+    }
+
+    .container div{
+        height: 180px;
+    }
+
+    .prjts-content img{
+        height: 120px;
+    }
+
+    .contact-grnl{
+        width: 85%;
+        margin: 0 auto;
+        flex-direction: row;
+        align-items: center;
+        box-sizing: border-box;
     }
 }
